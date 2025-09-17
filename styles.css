@@ -142,7 +142,7 @@ main{
     text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
 }
 .description{
-padding-bottom: 6px;
+padding-top: 10px;
 font-size: 1.2rem;
 letter-spacing: 0.05em;
 max-width: 35rem;
