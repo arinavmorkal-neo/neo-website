@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Pacifico&display=swap');
+
+
 * {
 margin: 0;
 padding: 0;
@@ -14,10 +17,41 @@ body {
     line-height: 1.5;
 }
 /* create a new deasine for logo */
-.logo{
-    color: #000000;
+
+..logo {
+  font-family: 'Poppins', sans-serif; /* modern, bold */
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #2AF598, #1E90FF, #FF6B6B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* gradient text */
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
 
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: #1E90FF;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  letter-spacing: 3px;
+}
+
+.logo:hover::after {
+  width: 100%; /* underline effect */
+}
 
 
 /*GRADIENT AND LAYER BLUR EFFECT*/
