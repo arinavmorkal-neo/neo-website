@@ -13,6 +13,13 @@ body {
     min-height: 100vh;
     line-height: 1.5;
 }
+/* create a new deasine for logo */
+.logo{
+    color: black;
+}
+
+
+
 /*GRADIENT AND LAYER BLUR EFFECT*/
 
 .image-gradient{
@@ -71,21 +78,31 @@ nav a {
 nav a:hover{
     color: #552500;
 }
+
 .btn-signing {
-    background: linear-gradient(to right, #2AF598, #1E90FF);
-    color: rgb(143, 0, 0);
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
+  background: linear-gradient(to right, #2AF598, #1E90FF);
+  color: rgb(143, 0, 0);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* subtle depth */
 }
 
-.btn-signing:hover{
-    background-color: rgb(121, 0, 0);
+.btn-signing:hover {
+  transform: scale(0.93); /* shrink */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25); /* smaller shadow */
+  filter: brightness(0.95); /* slight darkening */
 }
+
+.btn-signing:active {
+  transform: scale(0.9); /* extra press-down on click */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
 /* MAIN CONTENT*/
 
 main{
