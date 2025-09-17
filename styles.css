@@ -18,7 +18,7 @@ body {
 }
 /* create a new deasine for logo */
 
-..logo {
+.logo {
   font-family: 'Poppins', sans-serif; /* modern, bold */
   font-size: 2rem;
   font-weight: 700;
