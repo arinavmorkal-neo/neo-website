@@ -58,11 +58,21 @@ body {
 
 .image-gradient{
     position: absolute;
-    top: 0;
+    top: 0
+    ;
     right: 0;
     opacity: 0.5;
     z-index: -1;
 }
+
+.background1-image{
+    position: absolute;
+    top: 0;
+    right: auto;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .layer-blur{
     height: 0;
     width: 30rem;
@@ -154,9 +164,34 @@ main{
 }
 
 .content{
+    padding-top: 100px;
+    height: 100vh;
     max-width: 40rem;
     margin-left: 10%;
     z-index: 999;
+}
+
+.content2{
+    height: 100;
+    max-width: 40rem;
+    margin-left: 100;
+    z-index: 999;
+}
+
+/* robot*/
+
+.robot{
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    right: -20%;
+}
+
+.robot4{
+    height: 100vh;
+    position: right;
+    top: 0;
+    right: 20%;
 }
 
 .tag-box{
@@ -203,6 +238,18 @@ main{
     font-family:  'Montserrat', sans-serif;
     font-weight: 700; /* Bold */
 }
+.content1 h2{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin: 2rem 0;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.418);
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+
 .description{
 /* padding-top: 10px; */
 padding-bottom: 30px;
@@ -212,6 +259,17 @@ max-width: 35rem;
 color: #36454F;
 font-family: 'Merriweather', serif;
   font-weight: 400;
+}
+
+
+p.text{
+padding-bottom: 30px;
+font-size: 1.2rem;
+letter-spacing: 0.05em;
+max-width: 35rem;
+color: #36454F;
+font-family: 'poppins' sans-serif;
+font-weight: 400;
 }
 
 .buttons {
@@ -250,11 +308,6 @@ font-family: 'Merriweather', serif;
     background-color: gray;
 }
 
-.robot{
-    position: absolute;
-    top: 0;
-    right: -20%;
-}
 
 /*TABLET RESPONSIVE */
 @media (max-width: 1500px){
